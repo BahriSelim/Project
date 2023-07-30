@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding:0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(62, 128, 172);
+}
+.con{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.6s ease-out;
+    width: 400px;
+    height: 105px;
+
+}
+.searchbox{
+    display: flex;
+    justify-content: space-around;
+}
+.searchbox button{
+    background: none;
+    font-size: x-large;
+    color:  rgb(62, 128, 172);
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s ease ;
+    cursor: pointer;
+}
+.searchbox button:hover{
+    background-color: rgb(62, 128, 172);
+    color:white
+}
+.searchbox input{
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    color:  rgb(62, 128, 172);
+}
+.searchbox input::placeholder{
+    
+    font-size: x-large;
+    color:  rgb(62, 128, 172);
+}
+.eroor img{
+    align-items: center;
+    
+    padding-top: 50px;
+    width: 350px;
+    
+}
+.eroor p{
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    color: rgb(62, 128, 172);;
+    font-size: x-large;
+    font-weight: 600;
+}
+.eroor{
+    display: none;
+}
+.weatherdetails {
+    display: flex;
+    opacity: 0;
+}
+.weatherdetails p{
+    color:  rgb(36, 70, 92);
+    font-size: x-large;
+}
+.weatherdetails .wind{
+    
+    margin-left: 200px;
+}
+span{
+    color: rgb(62, 128, 172);;
+    
+}
+.weatherdetails .humidity{
+    margin-left: 10px;
+    
+}
+
+i{
+    font-size: xx-large;
+    color:  rgb(62, 128, 172);
+}
+.weatherbox{
+    text-align: center;
+}
+
+.weatherbox img{
+    width: 200px;
+    
+    
+    
+}
+.weatherbox .temp{
+    font-size: xxx-large;
+    color:  rgb(36, 70, 92);
+}
+.weatherbox .desc{
+    font-size: x-large;
+    color:  rgb(62, 128, 172);
+}
+
+
+.fadein{
+    animation:  0.5s fadein forwards;
+    animation-delay: 0.5s;
+}
+@keyframes fadein {
+    to{
+        
+        scale: 1;
+        opacity: 2;
+    }
+    
+}
