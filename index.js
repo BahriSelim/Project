@@ -11,6 +11,7 @@ search.addEventListener("click",()=>{
     const desc=document.querySelector(".weatherbox .desc")
     const wind=document.querySelector(".weatherdetails .wind p")
     const hum=document.querySelector(".weatherdetails .humidity p")
+    const a=document.querySelector(".a")
     if(city===""){
         return;
 
@@ -22,6 +23,7 @@ search.addEventListener("click",()=>{
         weatherdetails.style.opacity="0";
         img.src="img/hajji.jpg"
         con.style.height="500px";
+         a.href="hajji.html";
 
     }
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`)
@@ -70,6 +72,7 @@ search.addEventListener("click",()=>{
         hum.innerHTML=`${json.main.humidity}%`;
         weatherdetails.style.opacity="1";
         con.style.height="500px";
+        a.href=`https://www.google.com/maps/place/${city}`
 
     });
 })
